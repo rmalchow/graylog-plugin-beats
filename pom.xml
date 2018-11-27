@@ -8,13 +8,13 @@
     <parent>
         <groupId>org.graylog.plugins</groupId>
         <artifactId>graylog-plugin-parent</artifactId>
-        <version>2.4.7-SNAPSHOT</version>
+        <version>2.4.6</version>
         <relativePath>../graylog2-server/graylog-plugin-parent</relativePath>
     </parent>
 
     <groupId>org.graylog.plugins</groupId>
     <artifactId>graylog-plugin-beats</artifactId>
-    <version>2.4.7-SNAPSHOT</version>
+    <version>2.4.6</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>

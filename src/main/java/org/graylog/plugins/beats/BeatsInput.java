@@ -28,17 +28,18 @@ import org.graylog2.plugin.inputs.annotations.FactoryClass;
 import javax.inject.Inject;
 
 public class BeatsInput extends MessageInput {
-    private static final String NAME = "Beats";
+
+    private static final String NAME = "Beats (backported)";
 
     @Inject
     public BeatsInput(@Assisted Configuration configuration,
-                      BeatsTransport.Factory transportFactory,
-                      BeatsCodec.Factory codecFactory,
-                      Config config,
-                      Descriptor descriptor,
-                      MetricRegistry metricRegistry,
-                      LocalMetricRegistry localRegistry,
-                      ServerStatus serverStatus) {
+                       BeatsTransport.Factory transportFactory,
+                       BeatsCodec.Factory codecFactory,
+                       Config config,
+                       Descriptor descriptor,
+                       MetricRegistry metricRegistry,
+                       LocalMetricRegistry localRegistry,
+                       ServerStatus serverStatus) {
         super(metricRegistry, configuration, transportFactory.create(configuration),
                 localRegistry, codecFactory.create(configuration), config, descriptor, serverStatus);
     }
